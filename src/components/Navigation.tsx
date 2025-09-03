@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import logo from "@/assets/logo.png";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -53,8 +54,9 @@ export const Navigation = () => {
     <nav className="bg-background border-b border-border sticky top-0 z-50">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link to="/" className="text-xl font-semibold text-primary">
-            Ana M. Popisteanu
+          <Link to="/" className="text-xl font-semibold text-primary flex items-center space-x-2">
+            <img src={logo} alt="Ana Mihaela Popisteanu" className="h-10 w-10" />
+            <span>Ana M. Popisteanu</span>
           </Link>
 
           {/* Desktop Navigation */}

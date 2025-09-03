@@ -63,13 +63,13 @@ export default function Contact() {
   const contactInfo = [
     {
       icon: Phone,
-      title: "Telefon",
+      title: t("contact.phone"),
       content: "(0755) 033 444",
       href: "tel:+40755033444"
     },
     {
       icon: Mail,
-      title: "Email",
+      title: t("contact.email"),
       content: "ana.popisteanu@gmail.com",
       href: "mailto:ana.popisteanu@gmail.com"
     },

@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Mail, Phone, MapPin } from "lucide-react";
+import initials from "@/assets/amp.png";
 
 export const Footer = () => {
   const { t } = useTranslation();
@@ -9,8 +10,15 @@ export const Footer = () => {
       <div className="container mx-auto px-4 lg:px-8 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="font-semibold text-lg mb-4 text-primary">
-              Ana Mihaela Popisteanu
+            <h3 className="font-semibold text-lg mb-4 text-primary flex flex-col items-start">
+              <span className="inline-block h-10 w-10 mb-2">
+                <img
+                  src={initials}
+                  alt="Ana Mihaela Popisteanu"
+                  className="h-full w-full object-contain"
+                />
+              </span>
+              <span>Ana Mihaela Popisteanu</span>
             </h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
               {t("home.subtitle")}
@@ -51,7 +59,7 @@ export const Footer = () => {
         </div>
 
         <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; 2024 Ana Mihaela Popisteanu. Toate drepturile rezervate.</p>
+          <p>&copy; {new Date().getFullYear()} Ana Mihaela Popisteanu. Toate drepturile rezervate.</p>
         </div>
       </div>
     </footer>

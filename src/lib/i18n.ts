@@ -79,6 +79,8 @@ const resources = {
         contactInfo: "Informații de contact",
         workingHours: "Program de lucru",
         location: "Locație",
+        phone: "Telefon",
+        email: "Email",
         form: {
           name: "Nume complet",
           email: "Adresa de email",
@@ -185,6 +187,8 @@ const resources = {
         contactInfo: "Contact Information",
         workingHours: "Working Hours",
         location: "Location",
+        phone: "Phone",
+        email: "Email",
         form: {
           name: "Full Name",
           email: "Email Address", 
