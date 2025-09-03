@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 204 100% 98%;
+    --foreground: 203 23% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 203 23% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 203 23% 20%;
+
+    --primary: 203 89% 33%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 204 44% 90%;
+    --secondary-foreground: 203 23% 20%;
+
+    --muted: 204 20% 94%;
+    --muted-foreground: 203 10% 45%;
+
+    --accent: 142 52% 89%;
+    --accent-foreground: 142 35% 25%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 204 20% 88%;
+    --input: 204 20% 90%;
+    --ring: 203 89% 33%;
+
+    /* Psychology-specific colors */
+    --therapy-calm: 142 52% 89%;
+    --therapy-trust: 203 89% 33%;
+    --therapy-warmth: 30 44% 90%;
+    --therapy-professional: 203 23% 20%;
+    --therapy-accent: 142 35% 65%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 203 23% 8%;
+    --foreground: 204 20% 94%;
+
+    --card: 203 20% 12%;
+    --card-foreground: 204 20% 94%;
+
+    --popover: 203 20% 12%;
+    --popover-foreground: 204 20% 94%;
+
+    --primary: 203 89% 65%;
+    --primary-foreground: 203 23% 8%;
+
+    --secondary: 203 20% 16%;
+    --secondary-foreground: 204 20% 94%;
+
+    --muted: 203 15% 18%;
+    --muted-foreground: 204 10% 65%;
+
+    --accent: 142 35% 25%;
+    --accent-foreground: 204 20% 94%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 203 15% 18%;
+    --input: 203 15% 18%;
+    --ring: 203 89% 65%;
+
+    /* Dark mode psychology colors */
+    --therapy-calm: 142 35% 25%;
+    --therapy-trust: 203 89% 65%;
+    --therapy-warmth: 30 15% 18%;
+    --therapy-professional: 204 20% 94%;
+    --therapy-accent: 142 35% 45%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
