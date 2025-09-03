@@ -56,7 +56,7 @@ export const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="text-xl font-semibold text-primary flex items-center space-x-2">
             <img src={logo} alt="Ana Mihaela Popisteanu" className="h-10 w-10" />
-            <span>Ana M. Popisteanu</span>
+            <span className="bg-font-logo-gradient">Ana M. Popisteanu</span>
           </Link>
 
           {/* Desktop Navigation */}

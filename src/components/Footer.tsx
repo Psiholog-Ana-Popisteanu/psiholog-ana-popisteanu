@@ -10,7 +10,7 @@ export const Footer = () => {
       <div className="container mx-auto px-4 lg:px-8 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="font-semibold text-lg mb-4 text-primary flex flex-col items-start">
+            <h3 className="font-semibold text-lg mb-4 bg-font-logo-gradient flex flex-col items-start">
               <span className="inline-block h-10 w-10 mb-2">
                 <img
                   src={initials}

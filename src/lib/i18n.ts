@@ -106,7 +106,8 @@ const resources = {
           time: "09:00 - 18:00",
           closed: "Închis"
         },
-        locationText: "Cabinetul de Psihologie\nBucurești, România"
+        locationText: "Cabinetul de Psihologie\nBucurești, România",
+        gdpr: "Toate informațiile sunt tratate confidențial conform GDPR."
       }
     }
   },
@@ -214,7 +215,8 @@ const resources = {
           time: "09:00 - 18:00",
           closed: "Closed"
         },
-        locationText: "Psychology Office\nBucharest, Romania"
+        locationText: "Psychology Office\nBucharest, Romania",
+        gdpr: "All information is treated confidentially in accordance with GDPR."
       }
     }
   }

@@ -200,7 +200,7 @@ export default function Contact() {
                   </Button>
 
                   <p className="text-sm text-muted-foreground text-center">
-                    Toate informațiile sunt tratate confidențial conform GDPR.
+                    {t("contact.gdpr")}
                   </p>
                 </form>
               </CardContent>
