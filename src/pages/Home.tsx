@@ -28,16 +28,16 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-therapy-calm via-background to-therapy-warmth py-20 lg:py-32">
+      <section className="relative bg-gradient-to-br from-therapy-calm via-background to-therapy-warmth py-8 lg:py-12">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-therapy-professional leading-tight">
+            <h1 className="text-3xl lg:text-5xl font-bold mb-3 text-therapy-professional leading-tight">
               {t("home.title")}
             </h1>
-            <p className="text-xl lg:text-2xl text-therapy-professional/80 mb-4">
+            <p className="text-lg lg:text-xl text-therapy-professional/80 mb-2">
               {t("home.subtitle")}
             </p>
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-base lg:text-lg text-muted-foreground mb-6 leading-relaxed max-w-2xl mx-auto">
               {t("home.description")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -53,7 +53,7 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="py-16 lg:py-24">
+      <section className="py-12 lg:py-16">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {features.map((feature, index) => (
@@ -76,13 +76,13 @@ export default function Home() {
       </section>
 
       {/* Call to Action Section */}
-      <section className="bg-therapy-calm/30 py-16 lg:py-20">
+      <section className="bg-therapy-calm/30 py-12 lg:py-16">
         <div className="container mx-auto px-4 lg:px-8 text-center">
           <div className="max-w-2xl mx-auto">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-therapy-professional">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-therapy-professional">
               Începeți călătoria către bunăstare
             </h2>
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               Faceți primul pas către o viață mai echilibrată și împlinită. Sunt aici pentru a vă sprijini în această călătorie.
             </p>
             <Button asChild size="lg" className="bg-therapy-trust hover:bg-therapy-trust/90">

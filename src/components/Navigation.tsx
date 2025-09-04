@@ -43,8 +43,31 @@ export const Navigation = () => {
       <Button
         variant="outline"
         onClick={toggleLanguage}
-        className="text-sm"
+        className="text-sm flex items-center gap-2"
       >
+        <span className="inline-block w-5 h-5" style={{ transform: "translateY(2px)" }}>
+          {i18n.language !== "ro" ? (
+            // Romania flag SVG
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 40" width="20" height="18">
+              <rect width="20" height="40" x="0" y="0" fill="#002B7F"/>
+              <rect width="20" height="40" x="20" y="0" fill="#FCD116"/>
+              <rect width="20" height="40" x="40" y="0" fill="#CE1126"/>
+            </svg>
+          ) : (
+            // UK flag SVG
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 40" width="20" height="18">
+              <rect width="60" height="40" fill="#012169"/>
+              <polygon points="0,0 60,40 60,40 60,36 8,0" fill="#FFF"/>
+              <polygon points="60,0 0,40 0,40 0,36 52,0" fill="#FFF"/>
+              <polygon points="0,0 60,40 54,40 0,6" fill="#C8102E"/>
+              <polygon points="60,0 0,40 6,40 60,6" fill="#C8102E"/>
+              <rect x="25" width="10" height="40" fill="#FFF"/>
+              <rect y="15" width="60" height="10" fill="#FFF"/>
+              <rect x="27" width="6" height="40" fill="#C8102E"/>
+              <rect y="17" width="60" height="6" fill="#C8102E"/>
+            </svg>
+          )}
+        </span>
         {t("nav.languageToggle")}
       </Button>
     </>
